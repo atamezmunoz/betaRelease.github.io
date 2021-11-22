@@ -1,0 +1,309 @@
+<!DOCTYPE HTML>
+<meta charset="utf-8">
+          
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v6.js"></script>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Save Whales, Not Whaling</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Save Whales,<br />
+						Not Whaling</h1>
+						<p>The loudest animal in the world, needs your help </p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Save Whales</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Total impact</a></li>
+							<li><a href="generic.html">Who is Responsable</a></li>
+							<li><a href="elements.html">Breif History</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.greenpeace.org/usa/oceans/save-the-whales/" class="greenpeace"><span class="label">GreenPeace</span></a></li>
+							<li><a href="https://seashepherd.org/divina-guadalupe/?gclid=CjwKCAiAnO2MBhApEiwA8q0HYSCieAoTQj5Q8sqnbQel-6gy0Uz2Zd8CLvYObILwZdFvTBN3aj3y7xoCw6cQAvD_BwE" class="SeaShepherd"><span class="label">SeaShepherd</span></a></li>
+							<li><a href="https://iwc.int/home" class="IWC"><span class="label">IWC</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<span class="date"><br/></span>
+									<h2><a href="#">Our impacts<br />
+									add up</a></h2>
+									<p>Over 50,000 whales have been killed since 1985, <br />
+									the following graphs shows the different species of whales <br />
+									and how many have been killed since 1985. <br/>
+									Every dot represents 100 whales.</p>
+								</header>
+								<div id="my_dataviz"></div>
+
+								
+							</article>
+
+						<!-- Posts -->
+							<section class="posts">
+								<article>
+									<header>
+										<span class="date">1986 vs. 2018</span>
+										<h2><a href="#">There has been a decrease, <br />
+										but we still can't afford to kill whales</a></h2>
+									</header>
+									<button onclick="update(data1)">1986</button>
+									<button onclick="update(data2)">2018</button>
+									<h3>**Insert Bar Chart**</h3>
+          
+							<div id="beforeafter"></div>
+							
+								</article>
+								<article>
+									<header>
+										<span class="date">1986 - 2020</span>
+										<h2><a href="#">Japan has the largest <br />
+										whaling industry</a></h2>
+									</header>
+									<h3>**Insert Bar Chart**</h3>
+
+								</article>
+								<article>
+									<header>
+										<span class="date">April 18, 2017</span>
+										<h2><a href="#">Ante mattis<br />
+										interdum dolor</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
+									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">April 14, 2017</span>
+										<h2><a href="#">Tempus sed<br />
+										nulla imperdiet</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
+									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">April 11, 2017</span>
+										<h2><a href="#">Odio magna<br />
+										sed consectetur</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">April 7, 2017</span>
+										<h2><a href="#">Augue lorem<br />
+										primis vestibulum</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul>
+								</article>
+							</section>
+
+
+					</div>
+
+				<!-- Footer -->
+
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+
+	<script>
+
+    // set the dimensions and margins of the graph
+    const width = 1300
+    const height = 450
+
+
+    // append the svg object to the body of the page
+    const svg = d3.select("#my_dataviz")
+      .append("svg")
+        .attr("width", 1500)
+        .attr("height", 450)
+
+    
+    
+    // create dummy data -> just one element per circle
+    const data1 = d3.csv("Book5.csv");
+
+    const data = [{ "name": "A", "group": 1 }, { "name": "A", "group": 1 }, { "name": "A", "group": 1 }, { "name": "A", "group": 1 }, { "name": "A", "group": 1 }, { "name": "A", "group": 1 }, { "name": "A", "group": 1 }, { "name": "A", "group": 1 }, { "name": "A", "group": 1 }, { "name": "A", "group": 1 }, { "name": "A", "group": 1 }, { "name": "A", "group": 1 }, { "name": "A", "group": 1 }, { "name": "A", "group": 1 }, { "name": "A", "group": 1 }, { "name": "A", "group": 1 },
+    { "name": "B", "group": 2 }, { "name": "B", "group": 2 }, { "name": "B", "group": 2 }, { "name": "B", "group": 2 }, { "name": "B", "group": 2 }, { "name": "B", "group": 2 }, { "name": "B", "group": 2 }, { "name": "B", "group": 2 }, { "name": "B", "group": 2 }, { "name": "B", "group": 2 }, 
+    { "name": "C", "group": 3 }, 
+    { "name": "D", "group": 4 }, { "name": "D", "group": 4 }, { "name": "D", "group": 4 }, { "name": "D", "group": 4 }, { "name": "D", "group": 4 }, { "name": "D", "group": 4 }, { "name": "D", "group": 4 }, { "name": "D", "group": 4 }, { "name": "D", "group": 4 }, { "name": "D", "group": 4 }, { "name": "D", "group": 4 }, { "name": "D", "group": 4 }, { "name": "D", "group": 4 }, { "name": "D", "group": 4 }, { "name": "D", "group": 4 }, { "name": "D", "group": 4 }, { "name": "D", "group": 4 }, { "name": "D", "group": 4 }, 
+    { "name": "E", "group": 5 }, { "name": "E", "group": 5 }, { "name": "E", "group": 5 }, { "name": "E", "group": 5 }, { "name": "E", "group": 5 }, { "name": "E", "group": 5 }, { "name": "E", "group": 5 }, { "name": "E", "group": 5 }, { "name": "E", "group": 5 }, { "name": "E", "group": 5 }, { "name": "E", "group": 5 }, { "name": "E", "group": 5 }, { "name": "E", "group": 5 }, { "name": "E", "group": 5 }, { "name": "E", "group": 5 }, { "name": "E", "group": 5 }, { "name": "E", "group": 5 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, { "name": "F", "group": 6 }, 
+    { "name": "G", "group": 7 }, { "name": "G", "group": 7 }, { "name": "G", "group": 7 }, { "name": "G", "group": 7 }, { "name": "G", "group": 7 }, { "name": "G", "group": 7 }, { "name": "G", "group": 7 }, { "name": "G", "group": 7 }, { "name": "G", "group": 7 }, { "name": "G", "group": 7 }, 
+    { "name": "G", "group": 7 }, { "name": "G", "group": 7 }, { "name": "G", "group": 7 }, { "name": "G", "group": 7 }, { "name": "G", "group": 7 }, { "name": "G", "group": 7 }, { "name": "G", "group": 7 }, { "name": "G", "group": 7 }, { "name": "G", "group": 7 }, { "name": "G", "group": 7 }, 
+    { "name": "G", "group": 7 }, { "name": "G", "group": 7 }, { "name": "G", "group": 7 }, { "name": "G", "group": 7 }, { "name": "G", "group": 7 }, { "name": "G", "group": 7 }, { "name": "G", "group": 7 }, { "name": "G", "group": 7 }, { "name": "G", "group": 7 }, { "name": "G", "group": 7 }, 
+    { "name": "G", "group": 7 }, { "name": "G", "group": 7 }, { "name": "G", "group": 7 }, { "name": "G", "group": 7 }, { "name": "G", "group": 7 }, { "name": "G", "group": 7 }, { "name": "G", "group": 7 }, { "name": "G", "group": 7 }, { "name": "G", "group": 7 }, { "name": "G", "group": 7 }, { "name": "G", "group": 7 },
+    { "name": "H", "group": 8 }, { "name": "H", "group": 8 }, { "name": "H", "group": 8 }, { "name": "H", "group": 8 }, { "name": "H", "group": 8 }, { "name": "H", "group": 8 }, { "name": "H", "group": 8 }, { "name": "H", "group": 8 }, { "name": "H", "group": 8 }, { "name": "H", "group": 8 }, 
+    { "name": "H", "group": 8 }, { "name": "H", "group": 8 }, { "name": "H", "group": 8 }, { "name": "H", "group": 8 }, { "name": "H", "group": 8 }, { "name": "H", "group": 8 }, { "name": "H", "group": 8 }, { "name": "H", "group": 8 }, { "name": "H", "group": 8 } ]
+    
+    // A scale that gives a X target position for each group
+    const x = d3.scaleOrdinal()
+      .domain([1, 2, 3, 4, 5, 6, 7, 8])
+      .range([30, 120, 200, 290, 390, 590, 790, 900])
+    
+    // A color scale
+    const color = d3.scaleOrdinal()
+      .domain([1, 2, 3, 4, 5, 6, 7, 8])
+      .range([ "#b8eafc", "#89d6f6", "#56c1ef", "#35aae7","#2c95dc","#2f7bce","#3763bb","#2c4ca1"])
+    
+    // Initialize the circle: all located at the center of the svg area
+    const node = svg.append("g")
+      .selectAll("circle")
+      .data(data)
+      .join("circle")
+        .attr("r", 4)
+        .attr("cx", width / 2)
+        .attr("cy", height / 2)
+        .style("fill", d => color(d.group))
+        .style("fill-opacity", 0.8)
+        .attr("stroke", "black")
+        .style("stroke-width", .5)
+        .call(d3.drag() // call specific function when circle is dragged
+             .on("start", dragstarted)
+             .on("drag", dragged)
+             .on("end", dragended));
+    
+    // Features of the forces applied to the nodes:
+    var simulation = d3.forceSimulation()
+        .force("x", d3.forceX().strength(0.5).x(d => x(d.group)))
+        .force("y", d3.forceY().strength(0.05).y( height/2 ))
+        //.force("center", d3.forceCenter().x(width / 2).y(height / 2)) // Attraction to the center of the svg area
+        .force("charge", d3.forceManyBody().strength(1)) // Nodes are attracted one each other of value is > 0
+        .force("collide", d3.forceCollide().strength(.1).radius(10).iterations(1)) // Force that avoids circle overlapping
+    
+    // Apply these forces to the nodes and update their positions.
+    // Once the force algorithm is happy with positions ('alpha' value is low enough), simulations will stop.
+    simulation
+        .nodes(data)
+        .on("tick", function(d){
+          node
+              .attr("cx", d => d.x)
+              .attr("cy", d => d.y)
+        });
+    
+    // What happens when a circle is dragged?
+    function dragstarted(event, d) {
+      if (!event.active) simulation.alphaTarget(.03).restart();
+      d.fx = d.x;
+      d.fy = d.y;
+    }
+    function dragged(event, d) {
+      d.fx = event.x;
+      d.fy = event.y;
+    }
+    function dragended(event, d) {
+      if (!event.active) simulation.alphaTarget(.03);
+      d.fx = null;
+      d.fy = null;
+    }
+
+    </script>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic Page - Massively by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Who is Responsable</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Total impact</a></li>
+							<li class="active"><a href="generic.html">Who is Responsable</a></li>
+							<li><a href="elements.html">Brief History</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.greenpeace.org/usa/oceans/save-the-whales/" class="greenpeace"><span class="label">GreenPeace</span></a></li>
+							<li><a href="https://seashepherd.org/divina-guadalupe/?gclid=CjwKCAiAnO2MBhApEiwA8q0HYSCieAoTQj5Q8sqnbQel-6gy0Uz2Zd8CLvYObILwZdFvTBN3aj3y7xoCw6cQAvD_BwE" class="SeaShepherd"><span class="label">SeaShepherd</span></a></li>
+							<li><a href="https://iwc.int/home" class="IWC"><span class="label">IWC</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date">April 25, 2017</span>
+									<h1>Who is<br />
+									Responsable</h1>
+									<p>Several countries have been a part of the whaling industry,<br />
+									some have taken action to ban such industry, but whales are still<br />
+									being killed by these countries.</p>
+								</header>
+								
+								<h3>**Insert Line Graph**</h3>
+
+
+								</section>
+					<section class="posts">
+						<article>
+							<header>
+								<span class="date">1986</span>
+								<h2>The First Records <br />
+								of Whaling</h2>
+							</header>
+							<svg id="my_dataviz" width="400" height="300"></svg>
+						</article>
+						<article>
+							<header>
+								<span class="date">1992</span>
+								<h2>Iceland widthdraws from IWC<br />
+								</h2>
+							</header>
+							<h3>**Insert Choropleth Map**</h3>
+							
+
+						</article>
+						<article>
+							<header>
+								<span class="date">1994</span>
+								<h2>International Whaling Commission<br />
+								adopts Southern Ocean Whale Sanctuary</h2>
+							</header>
+							<h3>**Insert Choropleth Map**</h3>
+
+
+						</article>
+						<article>
+							<header>
+								<span class="date">2002</span>
+								<h2>54TH IWC Meeting</h2>
+							</header>
+							<h3>**Insert Choropleth Map**</h3>
+
+
+						</article>
+						<article>
+							<header>
+								<span class="date">2005</span>
+								<h2>Japan Starts<br />
+								Research Whaling (JARPA II)</h2>
+							</header>
+							<h3>**Insert Choropleth Map**</h3>
+
+
+						</article>
+						<article>
+							<header>
+								<span class="date">2014</span>
+								<h2>International Court of Justice<br />
+								Suspends JARPA II</h2>
+							</header>
+							<h3>**Insert Choropleth Map**</h3>
+
+
+						</article>
+						<article>
+							<header>
+								<span class="date">2017</span>
+								<h2>Japan Submits New Research Plan <br />
+								(NEWREP-NP) to The IWC</h2>
+							</header>
+							<h3>**Insert Choropleth Map**</h3>
+
+
+						</article>
+						<article>
+							<header>
+								<span class="date">2018</span>
+								<h2>Japan Withdraws from the International<br />
+								Convention of Whaling Regulation</h2>
+							</header>
+							<h3>**Insert Choropleth Map**</h3>
+
+
+						</article>
+					</section>
+				</div>
+
+
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+
+	<script src="https://d3js.org/d3.v6.min.js"></script>
+	<script>
+
+		// The svg
+		const svg = d3.select("#my_dataviz"),
+		  width = +svg.attr("width"),
+		  height = +svg.attr("height");
+		
+		// Map and projection
+		const path = d3.geoPath();
+		const projection = d3.geoMercator()
+		  .scale(70)
+		  .center([0,20])
+		  .translate([width / 2, height / 2]);
+		
+		// Data and color scale
+		let data = new Map()
+		const colorScale = d3.scaleThreshold()
+		  .domain([1, 500, 1000, 1500, 2000, 2500])
+		  .range(d3.schemeBlues[7]);
+		
+		// Load external data and boot
+		Promise.all([
+		d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson"),
+		d3.csv("1986.csv", function(d) {
+			data.set(d.code, +d.pop)
+		})
+		]).then(function(loadData){
+			let topo = loadData[0]
+		
+			// Draw the map
+		  svg.append("g")
+			.selectAll("path")
+			.data(topo.features)
+			.join("path")
+			  // draw each country
+			  .attr("d", d3.geoPath()
+				.projection(projection)
+			  )
+			  // set the color of each country
+			  .attr("fill", function (d) {
+				d.total = data.get(d.id) || 0;
+				return colorScale(d.total);
+			  })
+		})
+		</script>
+
+</html>
